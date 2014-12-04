@@ -17,7 +17,7 @@ public class TestQuickSort {
 												// the test is passing or not
 		QuickSort sort = new QuickSort();// creating object of the class
 											// QuickSort called sort
-		int[] sorted = sort.quickSort(toSort, 1, toSort.length);// sort object
+		int[] sorted = sort.quickSort(toSort, 0, toSort.length-1);// sort object
 																// is used to
 																// call the
 																// quick sort

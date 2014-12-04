@@ -23,7 +23,7 @@ public class QuickSort {
 	 * PSEUDOCODE FOR PARTITION METHOD x=A[r] i=p-1 for j=p to r-1 if A[j] <= x
 	 * i=i+1 exchange A[i+1] with A[i] exchage A[i+1] with A[r] return i+1
 	 */
-	public int partition(int array[], int p, int r) {
+	private int partition(int array[], int p, int r) {
 		int x = array[r];
 		int i = p - 1;
 		for (int j = p; j <= r - 1; j++) {
