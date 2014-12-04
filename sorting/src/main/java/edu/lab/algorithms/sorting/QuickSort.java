@@ -1,16 +1,13 @@
 package edu.lab.algorithms.sorting;
 
 public class QuickSort {
-	//global variable for the interchange used in the exchange method
-		private int exchangeArray[];
-		
-	//Actual method for performing the quick sort
+	// global variable for the interchange used in the exchange method
+	// private int exchangeArray[];
+
+	// Actual method for performing the quick sort
 	/*
-	 * PSEUDOCODE FOR QUICK SORT METHOD
-	 * if p<r
-	 * q = PARTITION(A,p,r)
-	 * QUICKSORT(A,p,q-1)
-	 * QUICKSORT(A,q+1,r)
+	 * PSEUDOCODE FOR QUICK SORT METHOD if p<r q = PARTITION(A,p,r)
+	 * QUICKSORT(A,p,q-1) QUICKSORT(A,q+1,r)
 	 */
 	public int[] quickSort(int array[], int p, int r) {
 		if (p < r) {
@@ -21,17 +18,10 @@ public class QuickSort {
 		return array;
 	}
 
-	//Partitions the algorithm into sorted two sets of sub arrays
+	// Partitions the algorithm into sorted two sets of sub arrays
 	/*
-	 * PSEUDOCODE FOR PARTITION METHOD
-	 * x=A[r]
-	 * i=p-1
-	 * for j=p to r-1 
-	 * 		if A[j] <= x
-	 * 			i=i+1
-	 * 			exchange A[i+1] with A[i]
-	 * 		exchage A[i+1] with A[r]
-	 * return i+1
+	 * PSEUDOCODE FOR PARTITION METHOD x=A[r] i=p-1 for j=p to r-1 if A[j] <= x
+	 * i=i+1 exchange A[i+1] with A[i] exchage A[i+1] with A[r] return i+1
 	 */
 	public int partition(int array[], int p, int r) {
 		int x = array[r];
@@ -39,22 +29,20 @@ public class QuickSort {
 		for (int j = p; j <= r - 1; j++) {
 			if (array[j] <= x) {
 				i = i + 1;
-				exchange(i, j);
+				exchange(array, i, j);
 			}
 		}
-		exchange(i + 1, r);
+		exchange(array, i + 1, r);
 		return (i + 1);
 
 	}
 
-	
-
-	//Method to interchange elements
-	private void exchange(int a, int b) {
+	// Method to interchange elements
+	private void exchange(int array[], int a, int b) {
 		int temp = 0;
-		temp = exchangeArray[a];
-		exchangeArray[a] = exchangeArray[b];
-		exchangeArray[b] = temp;
+		temp = array[a];
+		array[a] = array[b];
+		array[b] = temp;
 
 	}
 
