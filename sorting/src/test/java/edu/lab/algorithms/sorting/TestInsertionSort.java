@@ -8,30 +8,35 @@ import static org.junit.Assert.*;
 public class TestInsertionSort {
 
 	@Test
-	public void testSort() {
+	public void testSortFloatingPointArrays() {
 		// Test case 1
-		int toSort[] = { 5, 2, 4, 6, 1, 3 };// This is the unsorted array and
-											// this array is fed to quick
-											// sort method for sorting
-		int expected[] = { 1, 2, 3, 4, 5, 6 }; // This is the expected array
-												// after sorting. This is used
-												// in Assert equals to check if
-												// the test is passing or not
-		InserstionSort sort = new InserstionSort();// creating object of the
-													// class InsertionSort
-													// called sort
 
-		int[] sorted = sort.inserstionSort(toSort);// sort object
-													// is used to
-													// call the
-													// quick sort
-													// method
+		// This is the unsorted array and this array is fed to quick sort method
+		// for sorting
+		double toSort[] = { 5.0f, 2.0f, 4.0f, 6.0f, 1.0f, 3.0f };
 
-		assertArrayEquals("The array is not sorted properly", sorted, expected); // checks
-																					// the
-																					// expected
-																					// and
-																					// actual
-		// output.
+		// This is the expected array after sorting. This is used in Assert
+		// equals to check if the test is passing or not
+		double expected[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
+		
+		// creating object of the class InsertionSort called sort
+		InserstionSort sort = new InserstionSort();
+
+		// sort object is used to call the quick sort method
+		double[] sorted = sort.inserstionSort(toSort);
+
+		// checks expected and actual output
+		assertArrayEquals(sorted, expected, 0.01);
+
+	}
+
+	@Test
+	public void testSortIntegers() {
+		// Test case 2 - check for integers
+		double toSort[] = { 5, 2, 4, 6, 1, 3 };
+		double expected[] = { 1, 2, 3, 4, 5, 6 };
+		InserstionSort sort = new InserstionSort();
+		double[] sorted = sort.inserstionSort(toSort);
+		assertArrayEquals(sorted, expected, 0);
 	}
 }
