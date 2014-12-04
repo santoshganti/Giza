@@ -4,10 +4,11 @@ public class QuickSort {
 	
 	//Actual method for performing the quick sort
 	/*
-	 * ALGORITHM FOR QUICK SORT METHOD
+	 * PSEUDOCODE FOR QUICK SORT METHOD
 	 * if p<r
 	 * q = PARTITION(A,p,r)
-	 * QUICKSORT(
+	 * QUICKSORT(A,p,q-1)
+	 * QUICKSORT(A,q+1,r)
 	 */
 	public int[] quickSort(int Array[], int p, int r) {
 		if (p < r) {
@@ -19,6 +20,17 @@ public class QuickSort {
 	}
 
 	//Partitions the algorithm into sorted two sets of sub arrays
+	/*
+	 * PSEUDOCODE FOR PARTITION METHOD
+	 * x=A[r]
+	 * i=p-1
+	 * for j=p to r-1 
+	 * 		if A[j] <= x
+	 * 			i=i+1
+	 * 			exchange A[i+1] with A[i]
+	 * 		exchage A[i+1] with A[r]
+	 * return i+1
+	 */
 	public int partition(int Array[], int p, int r) {
 		int x = Array[r];
 		int i = p - 1;
