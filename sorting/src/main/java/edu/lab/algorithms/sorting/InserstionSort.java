@@ -12,10 +12,10 @@ public class InserstionSort {
  * 	i=i-1
  * A[i+1] = key
  */
-	public int[] inserstionSort(int inputarray[]) {
+	public double[] inserstionSort(double inputarray[]) {
 
 		for (int j = 1; j < inputarray.length; j++) {
-			int key = inputarray[j];
+			double key = inputarray[j];
 			int i = j - 1;
 
 			while ((i > -1) && (inputarray[i] > key)) {
