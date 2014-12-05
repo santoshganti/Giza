@@ -3,9 +3,9 @@ package edu.lab.algorithms.sorting;
 /*
  * PSEUDO CODE FOR BUBBLE SORT
  * BubbleSort(A)
- * 	for k=1 to n-1
- * 		for i=0 to n-2
- * 			if A[i]>A[i+1]
+ * 	for k=1 to n-1//THis is included to make multiple passes happen
+ * 		for i=0 to n-2 //This will only check for one pass
+ * 			if A[i]>A[i+1]//Since we come left to right there, the left element should always be lower than right
  * 				swap A[i] with A[i+1]
  * return Array
  */
