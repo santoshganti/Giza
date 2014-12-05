@@ -12,12 +12,12 @@ package edu.lab.algorithms.sorting;
 public class BubbleSort {
 	public int[] bubbleSort(int array[]) {
 		int n = array.length;
-		for (int i = 0; i < n - 1; i++) {
-			for (int j = i; j < n; j++) {
-				if (array[i] > array[j]) {
+		for (int k = 1; k <=n - 1; k++) {
+			for (int i = 0; i <= n-2; i++) {
+				if (array[i] > array[i+1]) {
 					int temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
+					array[i] = array[i+1];
+					array[i+1] = temp;
 				}
 			}
 
