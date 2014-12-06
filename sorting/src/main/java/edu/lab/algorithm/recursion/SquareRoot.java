@@ -22,21 +22,21 @@ public class SquareRoot {
 	}
 
 	public double sqrtNum(double roughtApproximation, double a) {
-		if (isGoodEnough(roughtApproximation))
+		if (isGoodEnough(roughtApproximation, a))
 			return roughtApproximation;
 		else
-			sqrtNum(improve(roughtApproximation), a);
+			sqrtNum(improve( roughtApproximation,a),  a);
 		return a;
 
 	}
 
-	private double improve(double roughtApproximation) {
-		// TODO Auto-generated method stub
-		return 0;
+	private double improve(double roughtApproximation, double a) {
+		
+		return a;
 	}
 
-	private boolean isGoodEnough(double roughtApproximation) {
-		// TODO Auto-generated method stub
+	private boolean isGoodEnough(double roughtApproximation,double a) {
+		
 		return false;
 	}
 
