@@ -1,34 +1,34 @@
 package edu.lab.algorithm.recursion;
 
-class Seed {
-	private int multiplier;
-	private int exponent = 0;
-	private final int DIVISOR = 100;
+public class SquareRoot {
 
-	private int calculateMultiplier(double s) {
-		if (s < 100) {
-			return (int) s;
-		} else {
-			exponent++;
-			return calculateMultiplier(s / DIVISOR);
+	class Seed {
+		private int multiplier;
+		private int exponent = 0;
+		private final int DIVISOR = 100;
+
+		private int calculateMultiplier(double s) {
+			if (s < 100) {
+				return (int) s;
+			} else {
+				exponent++;
+				return calculateMultiplier(s / DIVISOR);
+			}
+
 		}
 
-	}
+		Seed(double s) {
+			multiplier = calculateMultiplier(s);
+		}
 
-	Seed(double s) {
-		multiplier = calculateMultiplier(s);
-	}
+		public int getExponent() {
+			return exponent;
+		}
 
-	public int getExponent() {
-		return exponent;
+		public int getMultiplier() {
+			return multiplier;
+		}
 	}
-
-	public int getMultiplier() {
-		return multiplier;
-	}
-}
-
-public class SquareRoot {
 
 	private final double EPSILON = 0.15;
 
