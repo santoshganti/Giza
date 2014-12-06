@@ -18,7 +18,7 @@ public class SquareRoot {
 
 	public double squareRoot(double a) {
 		squareRoot(roughtApproximation(a), a);
-		return a;
+		return squareRoot(a);
 	}
 
 	double squareRoot(double roughtApproximation, double a) {

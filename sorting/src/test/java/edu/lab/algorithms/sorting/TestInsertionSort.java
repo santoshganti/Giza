@@ -1,7 +1,5 @@
 package edu.lab.algorithms.sorting;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +7,6 @@ import static org.junit.Assert.*;
 //import static junit.framework.Assert.*;
 
 public class TestInsertionSort {
-	private static final Logger logger = LogManager.getLogger(InserstionSort.class);
 
 	@Test
 	public void testSortFloatingPointArrays() {
@@ -31,7 +28,6 @@ public class TestInsertionSort {
 
 		// checks expected and actual output
 		assertArrayEquals(sorted, expected, 0.01);
-		logger.info(sorted);
 
 	}
 
