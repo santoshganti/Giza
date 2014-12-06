@@ -17,10 +17,10 @@ public class SquareRoot {
 	public int squareRoot(int a) {
 		if (n == 0) {
 			roughtApproximation(a);
+		} else {
+
 		}
-		else{
-			
-		}
-		
+		return 0;// for now returning some value
+
 	}
 }
