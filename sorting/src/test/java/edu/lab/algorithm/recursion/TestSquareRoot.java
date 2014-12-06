@@ -13,6 +13,15 @@ public class TestSquareRoot {
 		assertFalse(number.isGoodEnough(404.457, 125348));
 		assertFalse(number.isGoodEnough(354.059, 125348));
 		assertTrue(number.isGoodEnough(354.045, 125348));
+
 	}
 
+	@Test
+	public void testModulus() {
+		SquareRoot number = new SquareRoot();
+		assertEquals(1, number.modulus(-1), 0);
+		assertEquals(1, number.modulus(1), 0);
+		assertEquals(0, number.modulus(0), 0);
+		
+	}
 }
