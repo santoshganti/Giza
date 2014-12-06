@@ -2,7 +2,7 @@ package edu.lab.algorithm.recursion;
 
 public class SquareRoot {
 
-	public double roughtApproximation(double a) {
+	double roughtApproximation(double a) {
 
 		double k = String.valueOf(a).length();// no. of the digits
 		double n = k - 2; // we raise this as the power
@@ -21,7 +21,7 @@ public class SquareRoot {
 		return a;
 	}
 
-	private double squareRoot(double roughtApproximation, double a) {
+	double squareRoot(double roughtApproximation, double a) {
 		if (isGoodEnough(roughtApproximation, a))
 			return roughtApproximation;
 		else
@@ -30,12 +30,12 @@ public class SquareRoot {
 
 	}
 
-	private double improve(double roughtApproximation, double a) {
+	double improve(double roughtApproximation, double a) {
 
 		return a;
 	}
 
-	private boolean isGoodEnough(double roughtApproximation, double a) {
+	boolean isGoodEnough(double roughtApproximation, double a) {
 
 		return false;
 	}
