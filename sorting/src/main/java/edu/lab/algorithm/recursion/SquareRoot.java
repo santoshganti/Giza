@@ -16,17 +16,23 @@ public class SquareRoot {
 
 	}
 
-	public void function(double x) {
-		double y = x + a * Math.pow(x, -1);
-	}
-
-	public double squareRoot(double a) {
-		if (int n == 0) {
-			roughtApproximation(a);
-		} else {
-
-		}
-		return 0;// for now returning some value
+	public double squareRoot(double roughtApproximation, double a) {
+		if (isGoodEnough(roughtApproximation))
+			return roughtApproximation;
+		else
+			squareRoot(improve(roughtApproximation), a);
+		return a;
 
 	}
+
+	private double improve(double roughtApproximation) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private boolean isGoodEnough(double roughtApproximation) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
