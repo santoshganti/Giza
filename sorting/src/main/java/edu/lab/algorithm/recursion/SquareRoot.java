@@ -28,11 +28,12 @@ public class SquareRoot {
 		public int getMultiplier() {
 			return multiplier;
 		}
-		public double getSeedValue(){
-			if(multiplier<10)
-				return (2)*Math.pow(10, exponent);
+
+		public double getSeedValue() {
+			if (multiplier < 10)
+				return (2) * Math.pow(10, exponent);
 			else
-				return (6)*Math.pow(10, exponent);
+				return (6) * Math.pow(10, exponent);
 		}
 	}
 
@@ -41,13 +42,12 @@ public class SquareRoot {
 	double guess(double s) {
 		Seed number = new Seed(s);
 		return number.getSeedValue();
-	
 
 	}
 
 	public double squareRoot(double s) {
-		squareRoot(guess(s), s);
-		return squareRoot(s);
+		return squareRoot(guess(s), s);
+
 	}
 
 	double squareRoot(double guess, double s) {
