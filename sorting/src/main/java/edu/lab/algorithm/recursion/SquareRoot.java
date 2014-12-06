@@ -2,6 +2,8 @@ package edu.lab.algorithm.recursion;
 
 public class SquareRoot {
 
+	private final double EPSILON = 0.00001;
+
 	double roughtApproximation(double a) {
 
 		double k = String.valueOf(a).length();// no. of the digits
@@ -35,9 +37,15 @@ public class SquareRoot {
 		return a;
 	}
 
-	boolean isGoodEnough(double roughtApproximation, double a) {
+	boolean isGoodEnough(double guess, double a) {
+		return (modulus(a - guess * guess) < EPSILON);
 
-		return false;
 	}
 
+	double modulus(double a) {
+		if (a >= 0)
+			return a;
+		else
+			return -a;
+	}
 }
