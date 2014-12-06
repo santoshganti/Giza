@@ -32,9 +32,9 @@ public class SquareRoot {
 
 	}
 
-	double improve(double roughtApproximation, double a) {
+	double improve(double guess, double a) {
+		return 1 / 2 * (guess + a / guess);
 
-		return a;
 	}
 
 	boolean isGoodEnough(double guess, double a) {
