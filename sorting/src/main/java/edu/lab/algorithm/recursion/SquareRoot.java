@@ -4,7 +4,7 @@ public class SquareRoot {
 
 	private final double EPSILON = 0.15;
 
-	double roughtApproximation(double a) {
+	double guess(double a) {
 
 		double k = String.valueOf(a).length();// no. of the digits
 		double n = k - 2; // we raise this as the power
@@ -19,21 +19,21 @@ public class SquareRoot {
 	}
 
 	public double squareRoot(double a) {
-		squareRoot(roughtApproximation(a), a);
+		squareRoot(guess(a), a);
 		return squareRoot(a);
 	}
 
-	double squareRoot(double roughtApproximation, double a) {
-		if (isGoodEnough(roughtApproximation, a))
-			return roughtApproximation;
+	double squareRoot(double guess, double a) {
+		if (isGoodEnough(guess, a))
+			return guess;
 		else
-			squareRoot(improve(roughtApproximation, a), a);
+			squareRoot(improve(guess, a), a);
 		return a;
 
 	}
 
 	double improve(double guess, double a) {
-		return 1 / 2 * (guess + a / guess);
+		return (guess + a / guess)/2;
 
 	}
 
