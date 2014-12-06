@@ -21,11 +21,11 @@ public class SquareRoot {
 		return a;
 	}
 
-	public double sqrtNum(double roughtApproximation, double a) {
+	public double squareRoot(double roughtApproximation, double a) {
 		if (isGoodEnough(roughtApproximation, a))
 			return roughtApproximation;
 		else
-			sqrtNum(improve( roughtApproximation,a),  a);
+			squareRoot(improve( roughtApproximation,a),  a);
 		return a;
 
 	}
