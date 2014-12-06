@@ -2,7 +2,7 @@ package edu.lab.algorithm.recursion;
 
 public class SquareRoot {
 
-	private final double EPSILON = 0.00001;
+	private final double EPSILON = 0.15;
 
 	double roughtApproximation(double a) {
 
