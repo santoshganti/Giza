@@ -33,4 +33,15 @@ public class TestSquareRoot {
 		assertEquals(354.059, number.improve(357.187, 125348), 0.001);
 		assertEquals(354.045, number.improve(354.059, 125348), 0.001);
 	}
+	@Test
+	public void testSquareRoot1(){
+		SquareRoot number = new SquareRoot();
+		assertEquals(354.045,number.squareRoot(600, 125348),0.001);
+	}
+	
+	@Test
+	public void testSquareRoot2(){
+		SquareRoot number = new SquareRoot();
+		assertEquals(354.045,number.squareRoot(125348),0.001);
+	}
 }
