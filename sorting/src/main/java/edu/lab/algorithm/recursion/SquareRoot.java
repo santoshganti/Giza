@@ -3,8 +3,6 @@ package edu.lab.algorithm.recursion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import edu.lab.algorithms.sorting.InserstionSort;
-
 public class SquareRoot {
 	private static final Logger logger = LogManager.getLogger(SquareRoot.class);
 
@@ -19,7 +17,7 @@ public class SquareRoot {
 			} else {
 				exponent++;
 				return calculateMultiplier(s / DIVISOR);
-			} 
+			}
 
 		}
 
@@ -27,13 +25,13 @@ public class SquareRoot {
 			multiplier = calculateMultiplier(s);
 		}
 
-//		public int getExponent() {
-//			return exponent;
-//		}
-//
-//		public int getMultiplier() {
-//			return multiplier;
-//		}
+		// public int getExponent() {
+		// return exponent;
+		// }
+		//
+		// public int getMultiplier() {
+		// return multiplier;
+		// }
 
 		public double getSeedValue() {
 			if (multiplier < 10)
