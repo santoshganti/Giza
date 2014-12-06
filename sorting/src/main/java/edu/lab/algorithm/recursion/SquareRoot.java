@@ -28,12 +28,20 @@ public class SquareRoot {
 		public int getMultiplier() {
 			return multiplier;
 		}
+		public double getSeedValue(){
+			if(multiplier<10)
+				return (2)*Math.pow(10, exponent);
+			else
+				return (6)*Math.pow(10, exponent);
+		}
 	}
 
 	private final double EPSILON = 0.15;
 
 	double guess(double s) {
-		return s;
+		Seed number = new Seed(s);
+		return number.getSeedValue();
+	
 
 	}
 
