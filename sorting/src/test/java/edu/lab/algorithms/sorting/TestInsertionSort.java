@@ -1,11 +1,15 @@
 package edu.lab.algorithms.sorting;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 //import static junit.framework.Assert.*;
 
 public class TestInsertionSort {
+	private static final Logger logger = LogManager.getLogger(MergeSort.class);
 
 	@Test
 	public void testSortFloatingPointArrays() {
@@ -18,7 +22,7 @@ public class TestInsertionSort {
 		// This is the expected array after sorting. This is used in Assert
 		// equals to check if the test is passing or not
 		double expected[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
-		
+
 		// creating object of the class InsertionSort called sort
 		InserstionSort sort = new InserstionSort();
 
@@ -27,6 +31,7 @@ public class TestInsertionSort {
 
 		// checks expected and actual output
 		assertArrayEquals(sorted, expected, 0.01);
+		logger.info(sorted);
 
 	}
 
