@@ -1,6 +1,10 @@
 package edu.lab.algorithms.sorting;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.*;
+
 public class MergeSort {
+	
 	public int[] mergeSort(int array[]) {
 		int n = array.length;
 		if (n < 2)

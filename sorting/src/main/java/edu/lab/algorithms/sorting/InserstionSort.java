@@ -1,5 +1,8 @@
 package edu.lab.algorithms.sorting;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class InserstionSort {
 
 /*
@@ -12,6 +15,8 @@ public class InserstionSort {
  * 	i=i-1
  * A[i+1] = key
  */
+	private static final Logger logger = LogManager.getLogger(InserstionSort.class);
+	
 	public double[] inserstionSort(double inputarray[]) {
 
 		for (int j = 1; j < inputarray.length; j++) {
@@ -27,5 +32,8 @@ public class InserstionSort {
 		}
 
 		return inputarray;
+		//logger.info(inputarray);
+		
 	}
+	
 }
