@@ -1,6 +1,12 @@
 package edu.lab.algorithm.recursion;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import edu.lab.algorithms.sorting.InserstionSort;
+
 public class SquareRoot {
+	private static final Logger logger = LogManager.getLogger(SquareRoot.class);
 
 	class Seed {
 		private int multiplier;
@@ -37,7 +43,7 @@ public class SquareRoot {
 		}
 	}
 
-	private final double EPSILON = 0.15;
+	private final double EPSILON = 0.001;
 
 	double guess(double s) {
 		Seed number = new Seed(s);
@@ -51,6 +57,7 @@ public class SquareRoot {
 	}
 
 	double squareRoot(double guess, double s) {
+		logger.info(“Sqrt {} current guess {}”,s,guess);
 		if (isGoodEnough(guess, s))
 			return guess;
 		else
