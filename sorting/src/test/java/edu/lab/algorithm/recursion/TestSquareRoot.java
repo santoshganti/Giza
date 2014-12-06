@@ -7,8 +7,10 @@ import org.junit.Test;
 public class TestSquareRoot {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testIsGoodEnough() {
+		SquareRoot number = new SquareRoot();
+		assertFalse(600,number.isGoodEnough(125348));
+		
 	}
 
 }
