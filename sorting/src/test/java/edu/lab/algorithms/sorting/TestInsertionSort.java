@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 //import static junit.framework.Assert.*;
 
 public class TestInsertionSort {
-	private static final Logger logger = LogManager.getLogger(MergeSort.class);
+	private static final Logger logger = LogManager.getLogger(InserstionSort.class);
 
 	@Test
 	public void testSortFloatingPointArrays() {
