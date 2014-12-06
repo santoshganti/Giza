@@ -12,7 +12,7 @@ public class TestSquareRoot {
 		assertFalse(number.isGoodEnough(600, 125348));
 		assertFalse(number.isGoodEnough(404.457, 125348));
 		assertFalse(number.isGoodEnough(354.059, 125348));
-		assertTrue(number.isGoodEnough(354.045, 125348));
+		assertTrue(number.isGoodEnough(354.0451951246895, 125348));
 
 	}
 
@@ -44,6 +44,7 @@ public class TestSquareRoot {
 	public void testSquareRoot2() {
 		SquareRoot number = new SquareRoot();
 		assertEquals(354.045, number.squareRoot(125348), 0.001);
+		assertEquals(1.414, number.squareRoot(2), 0.001);
 	}
 	
 	@Test

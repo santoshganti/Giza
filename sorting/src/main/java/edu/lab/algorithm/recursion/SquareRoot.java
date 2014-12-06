@@ -19,7 +19,7 @@ public class SquareRoot {
 			} else {
 				exponent++;
 				return calculateMultiplier(s / DIVISOR);
-			}
+			} 
 
 		}
 
@@ -27,13 +27,13 @@ public class SquareRoot {
 			multiplier = calculateMultiplier(s);
 		}
 
-		public int getExponent() {
-			return exponent;
-		}
-
-		public int getMultiplier() {
-			return multiplier;
-		}
+//		public int getExponent() {
+//			return exponent;
+//		}
+//
+//		public int getMultiplier() {
+//			return multiplier;
+//		}
 
 		public double getSeedValue() {
 			if (multiplier < 10)
@@ -57,7 +57,7 @@ public class SquareRoot {
 	}
 
 	double squareRoot(double guess, double s) {
-		logger.info(“Sqrt {} current guess {}”,s,guess);
+		logger.info("Sqrt {} current guess {}", s, guess);
 		if (isGoodEnough(guess, s))
 			return guess;
 		else
