@@ -17,26 +17,26 @@ public class SquareRoot {
 	}
 
 	public double squareRoot(double a) {
-		
+		squareRoot(roughtApproximation(a), a);
 		return a;
 	}
 
-	public double squareRoot(double roughtApproximation, double a) {
+	private double squareRoot(double roughtApproximation, double a) {
 		if (isGoodEnough(roughtApproximation, a))
 			return roughtApproximation;
 		else
-			squareRoot(improve( roughtApproximation,a),  a);
+			squareRoot(improve(roughtApproximation, a), a);
 		return a;
 
 	}
 
 	private double improve(double roughtApproximation, double a) {
-		
+
 		return a;
 	}
 
-	private boolean isGoodEnough(double roughtApproximation,double a) {
-		
+	private boolean isGoodEnough(double roughtApproximation, double a) {
+
 		return false;
 	}
 
