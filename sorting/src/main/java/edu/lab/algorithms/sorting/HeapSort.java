@@ -1,24 +1,19 @@
 package edu.lab.algorithms.sorting;
 
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HeapSort {
 	int A[];
 	private int heapsize;
 
-	// private static final Logger logger =
-	// LogManager.getLogger(HeapSort.class);
+	private static final Logger logger = LogManager.getLogger(HeapSort.class);
 
-//	public int parent(int i) {
-//		return (i / 2);
-//	}
-
-	public int left(int i) {
+	private int left(int i) {
 		return (2 * i);
 	}
 
-	public int right(int i) {
+	private int right(int i) {
 		return (2 * i + 1);
 	}
 
@@ -50,7 +45,7 @@ public class HeapSort {
 	}
 
 	public int[] heapSort(int A[]) {
-
+		logger.info("The array before sorting is {}:", A);
 		buildMaxHeap(A);
 		for (int i = heapsize; i > 0; i--) {
 			swap(A, 0, i);
@@ -58,6 +53,7 @@ public class HeapSort {
 			maxHeapify(A, 0);
 
 		}
+		logger.info("The array after sorting is {}:", A);
 		return A;
 	}
 
