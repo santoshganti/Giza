@@ -10,9 +10,9 @@ public class HeapSort {
 	// private static final Logger logger =
 	// LogManager.getLogger(HeapSort.class);
 
-	public int parent(int i) {
-		return (i / 2);
-	}
+//	public int parent(int i) {
+//		return (i / 2);
+//	}
 
 	public int left(int i) {
 		return (2 * i);
