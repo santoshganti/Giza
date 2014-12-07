@@ -32,7 +32,7 @@ public class QuickSort {
 				exchange(array, i, j);
 			}
 		}
-		exchange(array, i + 1, r);
+		exchange(array, i + 1, r); 
 		return (i + 1);
 
 	}
