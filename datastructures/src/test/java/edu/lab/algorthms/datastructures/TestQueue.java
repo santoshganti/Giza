@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TestQueue {
+
 	@Test
 	public void testIsEmptyQueue() {
 		QueueImpl queue = new QueueImpl(10);
@@ -18,16 +19,12 @@ public class TestQueue {
 		assertTrue(!queue.isEmpty());
 	}
 
-	@Test
+	@Test(expected = QueueFullException.class)
 	public void testIsFullWhenNotFull() {
-		try{
-			QueueImpl queue = new QueueImpl(1);
-		
+		QueueImpl queue = new QueueImpl(1);
 		queue.enqueue(2);
-		queue.enqueue(4);  
-		}catch (QueueFullException e1) {
-			e1.printStackTrace();
-		}
+		queue.enqueue(4);
+
 	}
 
 	@Test
@@ -46,14 +43,9 @@ public class TestQueue {
 
 	}
 
-	@Test
+	@Test(expected = QueueEmptyException.class)
 	public void testDequeueOnEmptyQueue() {
-		try {
-			QueueImpl queue = new QueueImpl(10);
-			queue.dequeue();
-		} catch (QueueEmptyException e) {
-			e.printStackTrace();
-		}
+		QueueImpl queue = new QueueImpl(10);
+		queue.dequeue();
 	}
-
 }
