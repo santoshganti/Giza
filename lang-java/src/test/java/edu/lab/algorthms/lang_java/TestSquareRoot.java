@@ -1,8 +1,10 @@
-package edu.lab.algorithm.recursion;
+package edu.lab.algorthms.lang_java;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import edu.lab.algorthms.lang_java.SquareRoot;
 
 public class TestSquareRoot {
 
