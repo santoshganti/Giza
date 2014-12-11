@@ -1,33 +1,54 @@
 package edu.lab.algorthms.lang_java;
 
 public class Calculator implements CalculateNumbers {
-	public Object add(Object a, Object b) {
-		return b;
+	public double add(double a, double b) {
+
+		return (a + b);
 
 	}
 
-	public Object substract(Object a, Object b) {
-		return b;
+	public double substract(double a, double b) {
+		return (a - b);
 
 	}
 
-	public Object multiply(Object a, Object b) {
-		return b;
+	public double multiply(double a, double b) {
+		return (a * b);
 
 	}
 
-	public Object divide(Object a, Object b) {
-		return b;
+	public double divide(double a, double b) {
+		if (b == 0)
+			throw new IllegalArgumentException();
+		else
+			return (a / b);
 
 	}
 
-	public Object modulus(Object a) {
-
-		return null;
+	public double modulus(double a) {
+		if (a > 0)
+			return a;
+		else
+			return -a;
 	}
 
-	public Object factorial(Object n) {
-
-		return null;
+	public double factorial(double n) {
+		if (n == 0)
+			return 1;
+		else
+			return (n * factorial(n - 1));
 	}
+
+	public double speed(double time, double distance) {
+		return multiply(time, distance);
+	}
+
+	public double time(double speed, double distance) {
+		return divide(speed, distance);
+	}
+
+	public double distance(double speed, double time) {
+		return divide(speed, time);
+	}
+
 }

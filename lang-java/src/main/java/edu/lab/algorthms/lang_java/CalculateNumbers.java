@@ -16,7 +16,7 @@ public interface CalculateNumbers {
 	 *            - Second number you want to add
 	 * @return - The sum of numbers after performing addition of a+b
 	 */
-	public Object add(Object a, Object b);
+	public double add(double a, double b);
 
 	/**
 	 * Computer takes and returns the value of subtraction of two numbers.
@@ -27,7 +27,7 @@ public interface CalculateNumbers {
 	 *            - Second number you want to add
 	 * @return - The sum of numbers after performing subtraction of a+b
 	 */
-	public Object substract(Object a, Object b);
+	public double substract(double a, double b);
 
 	/**
 	 * Computer takes and returns the value of multiplication of two numbers.
@@ -38,7 +38,7 @@ public interface CalculateNumbers {
 	 *            - Second number you want to add
 	 * @return - The sum of numbers after performing multiplication of a+b
 	 */
-	public Object multiply(Object a, Object b);
+	public double multiply(double a, double b);
 
 	/**
 	 * Computer takes and returns the value of division of two numbers.
@@ -49,7 +49,7 @@ public interface CalculateNumbers {
 	 *            - Second number you want to add
 	 * @return - The sum of numbers after performing division of a+b
 	 */
-	public Object divide(Object a, Object b);
+	public double divide(double a, double b);
 
 	/**
 	 * Computer takes and returns the value of modulus of two numbers. i.e |x| =
@@ -59,7 +59,7 @@ public interface CalculateNumbers {
 	 *            - First number you want to add
 	 * @return - The sum of numbers after performing modulus of a
 	 */
-	public Object modulus(Object a);
+	public double modulus(double a);
 
 	/**
 	 * Computer takes a number "n" and performs factorial of that number i.e n!
@@ -69,5 +69,5 @@ public interface CalculateNumbers {
 	 *            - The number for which you want to find the factorial
 	 * @return - The value after performing factorial
 	 */
-	public Object factorial(Object n);
+	public double factorial(double n);
 }
