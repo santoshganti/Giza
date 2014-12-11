@@ -1,4 +1,4 @@
-package printing;
+package edu.pluralsight.java.printing;
 
 public class Printer implements IMachine {
 	private String modelNumber;

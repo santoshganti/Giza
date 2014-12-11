@@ -1,8 +1,7 @@
 package greetings;
 
-import printing.IMachine;
-
-import printing.Printer;
+import edu.pluralsight.java.printing.IMachine;
+import edu.pluralsight.java.printing.Printer;
 
 public class HelloWorld {
 
