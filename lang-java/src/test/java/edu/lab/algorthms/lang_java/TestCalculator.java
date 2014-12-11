@@ -31,10 +31,22 @@ public class TestCalculator {
 	@Test
 	public void testModulus() {
 		assertEquals(1, calculate.modulus(-1), 0.01);
+		assertEquals(1, calculate.modulus(1), 0.01);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testDivisionByZeroException() {
 		calculate.divide(1, 0);
+	}
+	
+	@Test
+	public void testFactorial(){
+		assertEquals(120,calculate.factorial(5),0.01);
+	}
+	@Test
+	public void testSpeedTimeAndDistance(){
+		assertEquals(50,calculate.speed(25,2),0.01); 
+		assertEquals(50,calculate.time(100,2),0.01);
+		assertEquals(50,calculate.distance(100,2),0.01);
 	}
 }
