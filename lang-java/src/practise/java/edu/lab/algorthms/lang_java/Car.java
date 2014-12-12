@@ -4,6 +4,11 @@ package edu.lab.algorthms.lang_java;
  * 2. Removed public and check how it affects the inheritance
  * 3. Put private and protected and see the difference
  */
- public class Car {
-
+ public abstract class Car {
+	 private double price;
+	 private String model;
+	 private String year;
+	 public abstract void goFast();
+	 public abstract void goUpHill();
+	 public abstract void impressNeightbors();
 }
