@@ -1,5 +1,5 @@
 package food;
 
-public abstract class Fruit {
+ abstract public class Fruit {
 	public abstract void printFruit(); 
 }

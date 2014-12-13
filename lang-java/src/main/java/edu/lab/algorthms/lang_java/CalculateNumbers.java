@@ -6,7 +6,7 @@ package edu.lab.algorthms.lang_java;
  * @author santoshganti
  *
  */
-public interface CalculateNumbers {
+ public interface CalculateNumbers {
 	/**
 	 * Computer takes and returns the value of addition of two numbers.
 	 * 
