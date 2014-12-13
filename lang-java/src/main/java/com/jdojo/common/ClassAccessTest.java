@@ -8,9 +8,10 @@ package com.jdojo.common;
  * 2. Public -> Any class can access this 
  */
 
+import edu.lab.algorthms.lang_java.*;
 
 public class ClassAccessTest {
 	public static void main(String[] args) {
-		edu.lab.algorthms.lang_java.Human jack;
+		Human jack;
 	}
 }
