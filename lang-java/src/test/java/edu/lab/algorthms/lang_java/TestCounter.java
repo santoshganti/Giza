@@ -26,4 +26,8 @@ public class TestCounter {
 		assertEquals(1, c2.increment());
 		assertEquals(4, c2.staticIncrement());
 	}
+	@Test
+	public void testCounter2(){
+		assertEquals(0,Counter.staticIncrement());
+	}
 }
