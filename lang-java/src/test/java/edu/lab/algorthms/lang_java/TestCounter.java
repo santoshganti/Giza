@@ -28,6 +28,6 @@ public class TestCounter {
 	}
 	@Test
 	public void testCounter2(){
-		assertEquals(0,Counter.staticIncrement());
+		assertEquals(5,Counter.staticIncrement());
 	}
 }
