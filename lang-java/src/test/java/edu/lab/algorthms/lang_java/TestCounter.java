@@ -21,9 +21,9 @@ public class TestCounter {
 	public void testCounter1() {
 		Counter c1 = new Counter();
 		assertEquals(1, c1.increment());
-		assertEquals(1, c1.staticIncrement());
+		assertEquals(3, c1.staticIncrement());
 		Counter c2 = new Counter();
 		assertEquals(1, c2.increment());
-		assertEquals(2, c2.staticIncrement());
+		assertEquals(4, c2.staticIncrement());
 	}
 }
