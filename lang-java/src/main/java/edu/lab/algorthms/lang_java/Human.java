@@ -9,4 +9,8 @@ public class Human {
 	// a copy of instance variables in them
 	String gender;
 	String name;
+
+	Human Jack = new Human();// Jack will store the memeory location on the
+								// instance of this human
+	
 }
