@@ -8,7 +8,8 @@ public class Counter {
 		return ++count;
 	}
 
-	public int staticIncrement() {
+	public  static int staticIncrement() {
 		return ++Count;
 	}
+	
 }
