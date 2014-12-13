@@ -11,7 +11,8 @@ public class TestCounter {
 	public void testIncrement() {
 		assertEquals(1,c1.increment());
 		assertEquals(1,c1.staticIncrement());
-		
+		assertEquals(1,c2.increment());
+		assertEquals(2,c2.staticIncrement());
 	}
 
 
