@@ -12,7 +12,7 @@ public class Human {
 
 	@SuppressWarnings("unused")
 	public static void main(String args[]) {
-		Human Jack = new Human();// Jack will store the memeory location on the
+		Human jack = new Human();// Jack will store the memeory location on the
 									// instance of this human
 
 		/*
@@ -39,7 +39,9 @@ public class Human {
 		/*
 		 * Reference variables can be used to access instance variables because
 		 * they cannot be accessed directly
+		 * 
+		 * General syntax : <<reference variable Name>>.<<instance variable Name>>
 		 */
-		
+		jack.name="Jack Parker";
 	}
 }
