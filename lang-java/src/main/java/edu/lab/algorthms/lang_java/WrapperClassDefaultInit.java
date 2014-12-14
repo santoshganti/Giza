@@ -12,7 +12,7 @@ public class WrapperClassDefaultInit {
 
 	public static void main(String args[]) {
 
-		Byte b1 = new Byte(b);
+		Byte b1 = null;
 		System.out.println("Byte Object:" + b1);
 		
 		Short s1 = new Short(s);
