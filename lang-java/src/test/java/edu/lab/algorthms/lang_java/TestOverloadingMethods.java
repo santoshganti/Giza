@@ -14,25 +14,31 @@ public class TestOverloadingMethods {
 //		assertEquals(0,number.divide(1f, 0),0.01);
 //		
 //		
-	@Test(expected = ArithmeticException.class)
+	@Test
 	public void testIntDivideByZero() {
 		OverloadingMethods number = new OverloadingMethods();
 		assertEquals(0, number.divide(1, 0), 0.01);
 	}
 
-	@Test(expected = ArithmeticException.class)
+	@Test
 	public void testFloatDivideByZero() {
 		OverloadingMethods number = new OverloadingMethods();
 		assertEquals(0, number.divide(1f, 0), 0.01);
 	}
 
-	@Test(expected = ArithmeticException.class)
+	@Test
 	public void testDoubleDivideByZero() {
 		OverloadingMethods number = new OverloadingMethods();
 		assertEquals(0, number.divide(1f, 0), 0.01);
 	}
 
-	
+	@Test
+	public void testDoubleDivideByZero1() {
+		OverloadingMethods number = new OverloadingMethods();
+		assertEquals(0, number.divide(1f, 0), 0.01);
+		
+	}
+
 }
 
 

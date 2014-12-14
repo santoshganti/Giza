@@ -2,7 +2,7 @@ package edu.lab.algorthms.lang_java;
 
 public class OverloadingMethods {
 	public double divide(int a, int b) {
-		
+
 		return (a/b);
 
 	}
