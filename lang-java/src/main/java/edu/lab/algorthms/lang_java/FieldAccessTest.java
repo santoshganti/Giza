@@ -54,8 +54,8 @@ public class FieldAccessTest{
 
 		/*
 		 * Usage of NUll in reference variables
-		 */
-		/*
+		 *
+		 *
 		 * Assign Null value to John null is a reference type and it can be used
 		 * to assign to reference variable
 		 * 
