@@ -13,7 +13,7 @@ public class PrefixAndPostfix {
 		System.out
 				.println(" A will return its original value i.e 9 and then increase it by 1so this variable will hold "
 						+ postAssignment);
-		System.out.println("A is increased by 1" + a); // A is increased by 1
+		System.out.println("A is increased by 1 i.e " + a); // A is increased by 1
 
 		int preAssignment = ++b;
 
