@@ -9,7 +9,7 @@ public class DefaultInit {
 	double d;
 	boolean bool;
 	String str;
-	
+
 	public static void main (String args[]){
 		/*
 		 * Create an object of DefaultInit class
@@ -26,5 +26,6 @@ public class DefaultInit {
 	System.out.println("double is initialized to:"+obj.d);
 	System.out.println("Boolean is initialized to:"+obj.bool);
 	System.out.println("String is initialized to:"+obj.str);
+	
 	}
 }
