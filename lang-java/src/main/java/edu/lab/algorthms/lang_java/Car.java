@@ -10,11 +10,11 @@ public abstract class Car {
 	private String model;
 	private String year;
 
-	public abstract void goFast();
-
-	public abstract void goUpHill();
-
-	public abstract void impressNeightbors();
+//	public abstract void goFast();
+//
+//	public abstract void goUpHill();
+//
+//	public abstract void impressNeightbors();
 
 	public static void main(String args[]) {
 		System.out.println("Hi,I am from superclass car");
