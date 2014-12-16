@@ -1,4 +1,4 @@
-package com.jdojo.harnessingjava.chapter6;
+package edu.harnessingjava.chapter6;
 
 import static java.lang.System.out;
 import static java.lang.Math.*;
