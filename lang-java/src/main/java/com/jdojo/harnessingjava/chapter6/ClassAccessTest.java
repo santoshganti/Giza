@@ -1,4 +1,4 @@
-package com.jdojo.common;
+package com.jdojo.harnessingjava.chapter6;
 
 /*
  * Class can have only two access level modifiers 

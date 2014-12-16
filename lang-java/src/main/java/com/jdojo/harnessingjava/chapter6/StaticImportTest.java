@@ -1,4 +1,4 @@
-package com.jdojo.common;
+package com.jdojo.harnessingjava.chapter6;
 
 import static java.lang.System.out;
 import static java.lang.Math.*;
