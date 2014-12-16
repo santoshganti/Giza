@@ -1,4 +1,4 @@
-package greetings;
+package edu.pluralsight.java.main;
 
 import edu.pluralsight.java.printing.IMachine;
 import edu.pluralsight.java.printing.Printer;

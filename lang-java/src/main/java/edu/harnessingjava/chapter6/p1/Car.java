@@ -1,4 +1,4 @@
-package p1;
+package edu.harnessingjava.chapter6.p1;
 
 
 public abstract class Car extends Vehicle{
