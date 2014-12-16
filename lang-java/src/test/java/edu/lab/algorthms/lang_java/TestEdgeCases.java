@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import edu.ocaguide.objective.inheritance.OverloadingMethods;
+import edu.harnessingjava.chapter2.EdgeCases;
 
-public class TestOverloadingMethods {
+public class TestEdgeCases {
 
 //	@Test(expected=ArithmeticException.class)
 //	public void test() {
@@ -16,28 +16,28 @@ public class TestOverloadingMethods {
 //		assertEquals(0,number.divide(1f, 0),0.01);
 //		
 //		
-	@Test
+	@Test(expected=ArithmeticException.class)
 	public void testIntDivideByZero() {
-		OverloadingMethods number = new OverloadingMethods();
+		EdgeCases number = new EdgeCases();
 		assertEquals(0, number.divide(1, 0), 0.01);
 	}
 
 	@Test
 	public void testFloatDivideByZero() {
-		OverloadingMethods number = new OverloadingMethods();
-		assertEquals(0, number.divide(1f, 0), 0.01);
+		EdgeCases number = new EdgeCases();
+		assertEquals(Float.POSITIVE_INFINITY, number.divide(1f, 0), 0.01);
 	}
 
 	@Test
 	public void testDoubleDivideByZero() {
-		OverloadingMethods number = new OverloadingMethods();
-		assertEquals(0, number.divide(1f, 0), 0.01);
+		EdgeCases number = new EdgeCases();
+		assertEquals(Double.NEGATIVE_INFINITY, number.divide(1f, -0f), 0.01);
 	}
 
 	@Test
 	public void testDoubleDivideByZero1() {
-		OverloadingMethods number = new OverloadingMethods();
-		assertEquals(0, number.divide(1f, 0), 0.01);
+		EdgeCases number = new EdgeCases();
+		assertEquals(Double.NaN, number.divide(0f, 0), 0.01);
 		
 	}
 

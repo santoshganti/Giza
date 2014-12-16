@@ -1,6 +1,6 @@
-package edu.ocaguide.objective.inheritance;
+package edu.harnessingjava.chapter2;
 
-public class OverloadingMethods {
+public class EdgeCases {
 	public double divide(int a, int b) {
 
 		return (a/b);
@@ -17,3 +17,4 @@ public class OverloadingMethods {
 
 	}
 }
+
