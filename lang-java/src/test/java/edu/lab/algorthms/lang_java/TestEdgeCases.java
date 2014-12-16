@@ -8,14 +8,6 @@ import edu.harnessingjava.chapter2.EdgeCases;
 
 public class TestEdgeCases {
 
-//	@Test(expected=ArithmeticException.class)
-//	public void test() {
-//		OverloadingMethods number = new OverloadingMethods();
-//		assertEquals(0,number.divide(1,0),0.01);
-//		assertEquals(0,number.divide(1.0, 0),0.01);
-//		assertEquals(0,number.divide(1f, 0),0.01);
-//		
-//		
 	@Test(expected=ArithmeticException.class)
 	public void testIntDivideByZero() {
 		EdgeCases number = new EdgeCases();
