@@ -8,10 +8,9 @@ package edu.harnessingjava.chapter6;
  * 2. Public -> Any class can access this 
  */
 
-import edu.lab.algorthms.lang_java.*;
+
 
 public class ClassAccessTest {
 	public static void main(String[] args) {
-		Human jack;
 	}
 }
