@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.lab.ocaguide.objective1.enums;
 
 public class AccessLevelSample {
 	private int v1 = 100; // private access

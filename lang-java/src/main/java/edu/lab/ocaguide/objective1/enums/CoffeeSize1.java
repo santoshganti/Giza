@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.lab.ocaguide.objective1.enums;
 
 /*
  * Conceptual Example of how you can think about enums

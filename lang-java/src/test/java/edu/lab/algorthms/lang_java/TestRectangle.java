@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import edu.ocaguide.objective.inheritance.Rectangle;
+
 public class TestRectangle {
 
 	@Test

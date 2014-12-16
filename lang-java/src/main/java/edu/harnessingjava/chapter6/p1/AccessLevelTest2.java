@@ -1,6 +1,6 @@
 package edu.harnessingjava.chapter6.p1;
 
-import edu.lab.algorthms.lang_java.AccessLevelSample;
+import edu.lab.ocaguide.objective1.enums.AccessLevelSample;
 
 public class AccessLevelTest2 {
 	public static void main(String args[]) {

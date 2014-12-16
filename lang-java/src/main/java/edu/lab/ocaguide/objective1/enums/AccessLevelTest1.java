@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.lab.ocaguide.objective1.enums;
 
 public class AccessLevelTest1 {
 	public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.lab.ocaguide.objective1.enums;
 
 enum CoffeeSize {
 	BIG(8), HUGE(10), OVERWHELMING(16);

@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.harnessingjava.defaultvalues;
 
 public class DefaultInit {
 	byte b;

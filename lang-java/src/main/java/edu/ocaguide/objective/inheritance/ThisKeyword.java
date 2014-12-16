@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.ocaguide.objective.inheritance;
 
 public class ThisKeyword {
 	int num=1982;

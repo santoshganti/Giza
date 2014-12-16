@@ -1,4 +1,4 @@
-package edu.lab.algorthms.lang_java;
+package edu.ocaguide.objective.imports;
 
 import java.util.ArrayList;
 

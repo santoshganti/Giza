@@ -1,4 +1,5 @@
-package edu.lab.algorthms.lang_java;
+package edu.ocaguide.objective.inheritance;
+
 
 public class Rectangle extends Figure {
 	private double length, width;

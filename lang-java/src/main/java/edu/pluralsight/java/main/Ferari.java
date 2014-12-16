@@ -1,6 +1,6 @@
 package edu.pluralsight.java.main;
 
-import edu.lab.algorthms.lang_java.Car;
+import edu.ocaguide.objective.inheritance.Car;
 
 public class Ferari extends Car {
 
