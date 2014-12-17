@@ -9,6 +9,11 @@ public class UpcastingExample {
 		mgr.setName("Ken Furr");
 		
 		EmpUtil.printName(emp);
-		EmpUtil.printName(mgr);
+		EmpUtil.printName(mgr);//Upcasting at work
+		
+		emp =mgr;
+		System.out.println(emp instanceof Manager);
+			
+		
 	}
 }
