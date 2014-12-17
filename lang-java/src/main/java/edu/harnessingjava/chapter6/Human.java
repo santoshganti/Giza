@@ -12,6 +12,6 @@ public class Human {
 	// Every instance or object of this class will have these two fields
 	// Instance variable is also known as non-static variable. Objects will have
 	// a copy of instance variables in them
-	String gender;
-	String name;
+	protected String gender;
+	protected String name;
 }
