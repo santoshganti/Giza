@@ -25,6 +25,9 @@ public class SwtichCase {
 		case orange:
 			System.out.println("Hi! My name is apple");
 			break;
+		default:
+			System.out.println("I don't have what you are looking for");
+			break;
 		}
 	}
 }
