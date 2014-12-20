@@ -20,25 +20,34 @@ public class StringMethods {
 						+ x.equalsIgnoreCase("Atlantic"));
 
 		// Length of Sting
-		System.out.println("Returns Length of a String "+x.length());
+		System.out.println("Returns Length of a String " + x.length());
 
 		// replace methods
-		System.out.println("Replaces character in the first argument with another "+z.replace('i', 'x'));
+		System.out
+				.println("Replaces character in the first argument with another "
+						+ z.replace('i', 'x'));
 
 		// Substring
-		System.out.println("Returns string starting from index 4 "+x.substring(4));
-		System.out.println("Returns string starting from index 2 to 6 "+x.substring(2, 6));
+		System.out.println("Returns string starting from index 4 "
+				+ x.substring(4));
+		System.out.println("Returns string starting from index 2 to 6 "
+				+ x.substring(2, 6));
 
-		//toLowerCase 
-		System.out.println("Converts all the letters in the string to lowecase letters "+x.toLowerCase());
-		
-		//toUpperCase
-		System.out.println("Converts all the letters in the string to lowecase uppercase "+x.toUpperCase());
-		
-		//toString
-		System.out.println("Returns the string itself "+x.toString());
-		
-		//trim
-		System.out.println("Returns a string after trimming whitespaces "+t.trim() +"t");
+		// toLowerCase
+		System.out
+				.println("Converts all the letters in the string to lowecase letters "
+						+ x.toLowerCase());
+
+		// toUpperCase
+		System.out
+				.println("Converts all the letters in the string to lowecase uppercase "
+						+ x.toUpperCase());
+
+		// toString
+		System.out.println("Returns the string itself " + x.toString());
+
+		// trim
+		System.out.println("Returns a string after trimming whitespaces "
+				+ t.trim() + "t");
 	}
 }
