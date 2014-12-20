@@ -7,7 +7,9 @@ enum Fruit {
 public class SwtichCase {
 	public static void main(String[] args) {
 		String value = "apple";
-		Fruit fruit = Fruit.valueOf(value);
+		Fruit fruit = Fruit.valueOf(value); // returns string as Integer Object
+											// so that it can be used in switch
+											// case
 
 		switch (fruit) {
 		case apple:
