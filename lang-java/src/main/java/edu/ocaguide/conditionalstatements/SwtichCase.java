@@ -17,15 +17,15 @@ public class SwtichCase {
 			break;
 
 		case carrot:
-			System.out.println("Hi! My name is apple");
+			System.out.println("Hi! My name is carrot");
 			break;
 
 		case mango:
-			System.out.println("Hi! My name is apple");
+			System.out.println("Hi! My name is mango");
 			break;
 
 		case orange:
-			System.out.println("Hi! My name is apple");
+			System.out.println("Hi! My name is orange");
 			break;
 		default:
 			System.out.println("I don't have what you are looking for");
