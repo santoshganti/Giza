@@ -12,6 +12,8 @@ public class DivideByZero {
 			String msg = e.getMessage();
 			System.out.println("An error has occured. Error is " + msg);
 		}
+		System.out
+				.println("The control will come to the next block after try block. It will not come goto the try block again");
 		System.out.println("We have reached the end of the program");
 	}
 }
