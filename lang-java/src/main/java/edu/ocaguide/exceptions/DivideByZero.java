@@ -11,6 +11,10 @@ public class DivideByZero {
 		} catch (ArithmeticException e) {
 			String msg = e.getMessage();
 			System.out.println("An error has occured. Error is " + msg);
+		} catch (IllegalArgumentException e1) {
+			e1.printStackTrace();
+			System.out
+					.println("Only one catch block is executed even though there are multiple catch blocks");
 		}
 		System.out
 				.println("The control will come to the next block after try block. It will not come goto the try block again");
